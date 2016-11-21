@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>java</title>
+<link rel="stylesheet" href="./css/style.css"/>
+<!-- <script>
+function setCookie(name,value,iDay){
+	var date=new Date();
+	date.setDate(date.getDate()+iDay);
+	document.cookie=name+"="+value+";expires="+date;
+}
+
+//setCookie('userName','leo',365);
+//setCookie('password','1111',365);
+
+function getCookie(name){
+	var arr=document.cookie.split('; ');
+	for(var i=0;i<arr.length;i++){
+		var arr2=arr[i].split('=');
+		if(arr2[0]==name){
+			return arr2[1]
+		}
+	}
+	return '';
+}
+
+function removeCookie(name){
+	setCookie(name,1,-1)
+}
+
+window.onload=function(){
+	var oForm=document.getElementById('form1');
+	var oUser=document.getElementsByName('userName')[0];
+	var oPwd=document.getElementsByName('userPassword')[0];
+	
+/* 	oForm.onsubmit=function(){
+		setCookie('userName',oUser.value,14);
+		setCookie('userPassword',oPwd.value,14);
+	} */
+	
+	oUser.value=getCookie('userName');
+	oPwd.value=getCookie('userPassword');
+}
+
+//removeCookie('userName');
+//alert(document.cookie);
+
+//alert(getCookie('password1'));
+</script> -->
+
+
+</head>
+<body>
+<form id="form1" class="m-form m-form-ht n-login" action="/lesson7/login" method="post">
+    <div class="fmitem">
+        <label class="fmlab">用户名：</label>
+        <div class="fmipt">
+            <input class="u-ipt" name="userName" autofocus/>
+        </div>
+    </div>
+    <div class="fmitem">
+        <label class="fmlab">密码：</label>
+        <div class="fmipt">
+            <input class="u-ipt" type="password" name="password"/>
+        </div>
+    </div>
+    <div class="fmitem fmitem-nolab fmitem-btn">
+        <div class="fmipt">
+       		 <input type="submit" class="u-btn u-btn-primary u-btn-lg u-btn-block" value="login" />
+          
+        </div>
+    </div>
+</form>
+<div class="n-foot">
+    <p>版权所有：网易云课堂<a href="http://mooc.study.163.com/smartSpec/detail/85002.htm">Java开发工程师(Web方向)</a>微专业团队</p>
+</div>
+<script type="text/javascript" src="./js/md5.js"></script>
+<script type="text/javascript" src="./js/global.js"></script>
+<script type="text/javascript" src="./js/pageLogin.js"></script>
+</body>
+</html>
